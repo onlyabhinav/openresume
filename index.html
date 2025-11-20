@@ -424,7 +424,7 @@
       }
 
       async function loadResumeData() {
-        // For now, using sample data. Uncomment below to use Google Sheets
+        // Fetch data from Google Sheets
         const profileData = await fetchSheetData(SHEET_CONFIG.profile);
         const skillsData = await fetchSheetData(SHEET_CONFIG.skills);
         const experienceData = await fetchSheetData(SHEET_CONFIG.experience);
@@ -432,8 +432,15 @@
           SHEET_CONFIG.achievements
         );
 
-        // Using sample data
-        //renderResume(SAMPLE_DATA);
+        // Process and render the data
+        const resumeData = {
+          profile: processProfileData(profileData),
+          skills: skillsData,
+          experience: processExperienceData(experienceData),
+          achievements: processAchievementsData(achievementsData),
+        };
+
+        renderResume(resumeData);
       }
 
       function downloadPDF() {
