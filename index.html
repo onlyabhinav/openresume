@@ -1,553 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhinav - Technical Lead Resume</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Arial", sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background: #f5f5f5;
-        padding: 20px;
-      }
-
-      .controls {
-        max-width: 850px;
-        margin: 0 auto 20px;
-        text-align: right;
-      }
-
-      .download-btn {
-        background: #2563eb;
-        color: white;
-        border: none;
-        padding: 12px 24px;
-        font-size: 14px;
-        border-radius: 6px;
-        cursor: pointer;
-        font-weight: 600;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: background 0.3s;
-      }
-
-      .download-btn:hover {
-        background: #1d4ed8;
-      }
-
-      .container {
-        max-width: 850px;
-        margin: 0 auto;
-        background: white;
-        padding: 50px 60px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      .header {
-        border-bottom: 3px solid #2563eb;
-        padding-bottom: 20px;
-        margin-bottom: 30px;
-      }
-
-      .header h1 {
-        font-size: 2.5em;
-        color: #1e293b;
-        margin-bottom: 8px;
-      }
-
-      .header .title {
-        font-size: 1.3em;
-        color: #2563eb;
-        margin-bottom: 15px;
-        font-weight: 600;
-      }
-
-      .contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        font-size: 0.95em;
-        color: #64748b;
-      }
-
-      .contact-info a {
-        color: #2563eb;
-        text-decoration: none;
-      }
-
-      .contact-info a:hover {
-        text-decoration: underline;
-      }
-
-      .section {
-        margin-bottom: 35px;
-      }
-
-      .section h2 {
-        font-size: 1.4em;
-        color: #1e293b;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        border-bottom: 2px solid #e2e8f0;
-        padding-bottom: 8px;
-      }
-
-      .summary {
-        font-size: 1em;
-        line-height: 1.7;
-        color: #475569;
-        text-align: justify;
-      }
-
-      .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-      }
-
-      .skill-item {
-        display: flex;
-        align-items: start;
-      }
-
-      .skill-item strong {
-        min-width: 150px;
-        color: #1e293b;
-        font-size: 0.95em;
-      }
-
-      .skill-item span {
-        color: #475569;
-        font-size: 0.95em;
-      }
-
-      .experience-item,
-      .achievement-item {
-        margin-bottom: 25px;
-      }
-
-      .experience-item h3,
-      .achievement-item h3 {
-        font-size: 1.15em;
-        color: #1e293b;
-        margin-bottom: 5px;
-      }
-
-      .experience-item .meta {
-        color: #64748b;
-        font-size: 0.9em;
-        margin-bottom: 10px;
-        font-style: italic;
-      }
-
-      .experience-item ul,
-      .achievement-item ul {
-        margin-left: 20px;
-        margin-top: 8px;
-      }
-
-      .experience-item li,
-      .achievement-item li {
-        margin-bottom: 6px;
-        color: #475569;
-        font-size: 0.95em;
-        line-height: 1.6;
-      }
-
-      .loading {
-        text-align: center;
-        padding: 40px;
-        color: #64748b;
-      }
-
-      @media print {
-        body {
-          background: white;
-          padding: 0;
-        }
-
-        .controls {
-          display: none;
-        }
-
-        .container {
-          box-shadow: none;
-          padding: 30px;
-          max-width: 100%;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .container {
-          padding: 30px 25px;
-        }
-
-        .header h1 {
-          font-size: 2em;
-        }
-
-        .skills-grid {
-          grid-template-columns: 1fr;
-        }
-      }
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:Arial,sans-serif;line-height:1.6;color:#333;background:#f5f5f5;padding:20px}
+        .controls{max-width:850px;margin:0 auto 20px;text-align:right}
+        .download-btn{background:#2563eb;color:#fff;border:none;padding:12px 24px;font-size:14px;border-radius:6px;cursor:pointer;font-weight:600}
+        .download-btn:hover{background:#1d4ed8}
+        .container{max-width:850px;margin:0 auto;background:#fff;padding:50px 60px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+        .header{border-bottom:3px solid #2563eb;padding-bottom:20px;margin-bottom:30px}
+        .header h1{font-size:2.5em;color:#1e293b;margin-bottom:8px}
+        .header .title{font-size:1.3em;color:#2563eb;margin-bottom:15px;font-weight:600}
+        .contact-info{display:flex;flex-wrap:wrap;gap:20px;font-size:.95em;color:#64748b}
+        .contact-info a{color:#2563eb;text-decoration:none}
+        .contact-info a:hover{text-decoration:underline}
+        .section{margin-bottom:35px}
+        .section h2{font-size:1.4em;color:#1e293b;margin-bottom:15px;text-transform:uppercase;letter-spacing:.5px;border-bottom:2px solid #e2e8f0;padding-bottom:8px}
+        .summary{font-size:1em;line-height:1.7;color:#475569;text-align:justify}
+        .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+        .skill-item{display:flex;align-items:start}
+        .skill-item strong{min-width:150px;color:#1e293b;font-size:.95em}
+        .skill-item span{color:#475569;font-size:.95em}
+        .experience-item,.achievement-item{margin-bottom:25px}
+        .experience-item h3,.achievement-item h3{font-size:1.15em;color:#1e293b;margin-bottom:5px}
+        .experience-item .meta{color:#64748b;font-size:.9em;margin-bottom:10px;font-style:italic}
+        .experience-item ul,.achievement-item ul{margin-left:20px;margin-top:8px}
+        .experience-item li,.achievement-item li{margin-bottom:6px;color:#475569;font-size:.95em;line-height:1.6}
+        .error{padding:40px;text-align:center;color:#666}
+        .error h3{color:#dc2626;margin-bottom:15px}
+        .error code{background:#f1f5f9;padding:2px 8px;border-radius:4px;font-size:.9em}
+        @media print{body{background:#fff;padding:0}.controls{display:none}.container{box-shadow:none;padding:30px;max-width:100%}}
+        @media(max-width:768px){.container{padding:30px 25px}.header h1{font-size:2em}.skills-grid{grid-template-columns:1fr}}
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="controls">
-      <button class="download-btn" onclick="downloadPDF()">
-        📥 Download PDF
-      </button>
+        <button class="download-btn" onclick="downloadPDF()">📥 Download PDF</button>
     </div>
-
     <div class="container" id="resume">
-      <div class="loading">Loading resume data...</div>
+        <div style="padding:40px;text-align:center;color:#666">Loading...</div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script>
-      // CONFIGURATION: Replace this with your Google Sheet URL
-      // Make sure to publish your sheet: File > Share > Publish to web > Publish as CSV
+    // Configuration - change this to your JSON file location
+    const DATA_FILE = 'resume-data.json';
 
-      const SHEET_CONFIG = {
-        profile:
-          "https://docs.google.com/spreadsheets/d/e/2PACX-1vTQjN1MoOgy2fn4ABxSc9JFaBvCLPGyv6E9X4dNazOQiJO2VSsL9pJdF4zWakYPEg667h5Y3kFYfoah/pub?gid=835570137&single=true&output=csv",
-        skills:
-          "https://docs.google.com/spreadsheets/d/e/2PACX-1vTQjN1MoOgy2fn4ABxSc9JFaBvCLPGyv6E9X4dNazOQiJO2VSsL9pJdF4zWakYPEg667h5Y3kFYfoah/pub?gid=1008832593&single=true&output=csv",
-        experience:
-          "https://docs.google.com/spreadsheets/d/e/2PACX-1vTQjN1MoOgy2fn4ABxSc9JFaBvCLPGyv6E9X4dNazOQiJO2VSsL9pJdF4zWakYPEg667h5Y3kFYfoah/pub?gid=2128945236&single=true&output=csv",
-        achievements:
-          "https://docs.google.com/spreadsheets/d/e/2PACX-1vTQjN1MoOgy2fn4ABxSc9JFaBvCLPGyv6E9X4dNazOQiJO2VSsL9pJdF4zWakYPEg667h5Y3kFYfoah/pub?gid=448360817&single=true&output=csv",
-      };
-
-      // Sample data structure for testing (remove when using Google Sheets)
-      const SAMPLE_DATA = {
-        profile: {
-          name: "ABHINAV",
-          title: "Technical Lead | Solutions Architect",
-          email: "abhinav@example.com",
-          phone: "+91-XXXXX-XXXXX",
-          linkedin: "linkedin.com/in/yourprofile",
-          location: "Nagpur, India",
-          summary:
-            "Technical Lead with 15 years of proven expertise in enterprise Java, Spring Boot, and Microservices architecture. Specialized in driving digital transformation initiatives and cloud modernization strategies that deliver measurable business impact. Led critical infrastructure migrations including Oracle-to-PostgreSQL (EDB) and Google Cloud POCs, significantly enhancing platform scalability, performance, and cloud readiness. Champion of engineering excellence through DORA metrics, designing architectures and deployment pipelines that reduce lead time, increase deployment frequency, and strengthen system reliability.",
-        },
-        skills: [
-          {
-            category: "Languages & Frameworks",
-            items: "Java, Spring Boot, Spring Framework, Microservices",
-          },
-          {
-            category: "Cloud & DevOps",
-            items: "Google Cloud Platform, CI/CD, Docker, Kubernetes",
-          },
-          {
-            category: "Databases",
-            items:
-              "PostgreSQL (EDB), Oracle, Database Migration, Performance Tuning",
-          },
-          {
-            category: "Architecture",
-            items:
-              "Microservices, Event-Driven Design, RESTful APIs, Domain-Driven Design",
-          },
-          {
-            category: "Engineering Practices",
-            items: "DORA Metrics, SRE, Performance Engineering, Automation",
-          },
-          {
-            category: "Leadership",
-            items: "Technical Leadership, Mentorship, Architecture Governance",
-          },
-        ],
-        experience: [
-          {
-            title: "Technical Lead",
-            company: "Enterprise Technology Company",
-            period: "15 Years of Progressive Leadership",
-            responsibilities: [
-              "Led Oracle-to-PostgreSQL (EDB) migration, improving database performance and reducing operational costs while maintaining zero downtime",
-              "Drove Google Cloud POCs establishing foundation for cloud-native transformation and migration frameworks",
-              "Architected microservices solutions that improved DORA metrics: reduced lead time by 35%, increased deployment frequency by 50%",
-              "Championed automation initiatives through CI/CD pipelines, reducing deployment time from hours to minutes",
-              "Established technical standards and architectural patterns adopted across engineering teams",
-              "Mentored teams on cloud technologies, design patterns, and engineering best practices",
-            ],
-          },
-        ],
-        achievements: [
-          {
-            title: "Database Migration Leadership",
-            points: [
-              "Successfully migrated critical enterprise systems from Oracle to PostgreSQL (EDB)",
-              "Achieved 30% improvement in query performance and 40% reduction in database licensing costs",
-              "Zero downtime during cutover with comprehensive rollback strategy",
-            ],
-          },
-          {
-            title: "DORA Metrics Implementation",
-            points: [
-              "Established metrics-driven engineering culture focused on deployment frequency, lead time, and reliability",
-              "Reduced mean time to recovery (MTTR) by 40% through improved monitoring and automation",
-              "Increased deployment frequency from weekly to multiple times daily",
-            ],
-          },
-          {
-            title: "Cloud Modernization",
-            points: [
-              "Designed and executed GCP proof-of-concepts for critical workloads",
-              "Established cloud-native architecture patterns and migration roadmap",
-              "Reduced infrastructure costs by 25% through optimized cloud resource utilization",
-            ],
-          },
-        ],
-      };
-
-      async function fetchSheetData(url) {
-        try {
-          const response = await fetch(url);
-          const text = await response.text();
-          return parseCSV(text);
-        } catch (error) {
-          console.error("Error fetching sheet data:", error);
-          return null;
-        }
-      }
-
-      function parseCSV(text) {
-        const lines = text.split("\n");
-        const headers = lines[0].split(",").map((h) => h.trim());
-        const data = [];
-
-        for (let i = 1; i < lines.length; i++) {
-          if (lines[i].trim()) {
-            const values = lines[i].split(",").map((v) => v.trim());
-            const obj = {};
-            headers.forEach((header, index) => {
-              obj[header] = values[index] || "";
-            });
-            data.push(obj);
-          }
-        }
-
-        return data;
-      }
-
-      function renderResume(data) {
-        const { profile, skills, experience, achievements } = data;
-
-        const html = `
-                <div class="header">
-                    <h1>${profile.name}</h1>
-                    <div class="title">${profile.title}</div>
-                    <div class="contact-info">
-                        <span>📧 <a href="mailto:${profile.email}">${
-          profile.email
-        }</a></span>
-                        <span>📱 ${profile.phone}</span>
-                        <span>💼 <a href="https://${
-                          profile.linkedin
-                        }" target="_blank">LinkedIn</a></span>
-                        <span>📍 ${profile.location}</span>
+    function render(d) {
+        document.getElementById('resume').innerHTML = `
+            <div class="header">
+                <h1>${d.profile.name}</h1>
+                <div class="title">${d.profile.title}</div>
+                <div class="contact-info">
+                    <span>📧 <a href="mailto:${d.profile.email}">${d.profile.email}</a></span>
+                    <span>📱 ${d.profile.phone}</span>
+                    <span>💼 <a href="https://${d.profile.linkedin}" target="_blank">LinkedIn</a></span>
+                    <span>📍 ${d.profile.location}</span>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Professional Summary</h2>
+                <p class="summary">${d.profile.summary}</p>
+            </div>
+            <div class="section">
+                <h2>Core Competencies</h2>
+                <div class="skills-grid">
+                    ${d.skills.map(s => `<div class="skill-item"><strong>${s.category}:</strong><span>${s.items}</span></div>`).join('')}
+                </div>
+            </div>
+            <div class="section">
+                <h2>Professional Experience</h2>
+                ${d.experience.map(e => `
+                    <div class="experience-item">
+                        <h3>${e.title}</h3>
+                        <div class="meta">${e.company} | ${e.period}</div>
+                        <ul>${e.responsibilities.map(r => `<li>${r}</li>`).join('')}</ul>
                     </div>
-                </div>
-
-                <div class="section">
-                    <h2>Professional Summary</h2>
-                    <p class="summary">${profile.summary}</p>
-                </div>
-
-                <div class="section">
-                    <h2>Core Competencies</h2>
-                    <div class="skills-grid">
-                        ${skills
-                          .map(
-                            (skill) => `
-                            <div class="skill-item">
-                                <strong>${skill.category}:</strong>
-                                <span>${skill.items}</span>
-                            </div>
-                        `
-                          )
-                          .join("")}
+                `).join('')}
+            </div>
+            <div class="section">
+                <h2>Key Achievements</h2>
+                ${d.achievements.map(a => `
+                    <div class="achievement-item">
+                        <h3>${a.title}</h3>
+                        <ul>${a.points.map(p => `<li>${p}</li>`).join('')}</ul>
                     </div>
-                </div>
+                `).join('')}
+            </div>`;
+    }
 
-                <div class="section">
-                    <h2>Professional Experience</h2>
-                    ${experience
-                      .map(
-                        (exp) => `
-                        <div class="experience-item">
-                            <h3>${exp.title}</h3>
-                            <div class="meta">${exp.company} | ${
-                          exp.period
-                        }</div>
-                            <ul>
-                                ${exp.responsibilities
-                                  .map((resp) => `<li>${resp}</li>`)
-                                  .join("")}
-                            </ul>
-                        </div>
-                    `
-                      )
-                      .join("")}
-                </div>
+    function showError(msg) {
+        document.getElementById('resume').innerHTML = `
+            <div class="error">
+                <h3>⚠️ Could not load resume data</h3>
+                <p>${msg}</p>
+                <br>
+                <p><strong>To fix this:</strong></p>
+                <p>1. Make sure <code>${DATA_FILE}</code> is in the same folder</p>
+                <p>2. Serve files from a web server (see instructions below)</p>
+                <br>
+                <p style="font-size:.85em;color:#888">
+                    Quick local server options:<br>
+                    • Python: <code>python -m http.server 8000</code><br>
+                    • Node: <code>npx serve</code><br>
+                    • VS Code: Use "Live Server" extension
+                </p>
+            </div>`;
+    }
 
-                <div class="section">
-                    <h2>Key Achievements</h2>
-                    ${achievements
-                      .map(
-                        (achievement) => `
-                        <div class="achievement-item">
-                            <h3>${achievement.title}</h3>
-                            <ul>
-                                ${achievement.points
-                                  .map((point) => `<li>${point}</li>`)
-                                  .join("")}
-                            </ul>
-                        </div>
-                    `
-                      )
-                      .join("")}
-                </div>
-            `;
-
-        document.getElementById("resume").innerHTML = html;
-      }
-
-      // Data processing functions
-      function processProfileData(data) {
-        // CSV data comes as array, first row is headers, second row is data
-        if (!data || data.length < 1) return {};
-
-        // Convert array of objects to single profile object
-        const profile = {};
-        data.forEach((row) => {
-          if (row.Field && row.Value) {
-            profile[row.Field.toLowerCase()] = row.Value;
-          }
-        });
-
-        return profile;
-      }
-
-      function processExperienceData(data) {
-        if (!data || data.length < 1) return [];
-
-        const experiences = [];
-        let currentExp = null;
-
-        data.forEach((row) => {
-          if (row.Title && row.Title.trim()) {
-            // New experience entry
-            if (currentExp) {
-              experiences.push(currentExp);
-            }
-            currentExp = {
-              title: row.Title,
-              company: row.Company || "",
-              period: row.Period || "",
-              responsibilities: row.Responsibility ? [row.Responsibility] : [],
-            };
-          } else if (
-            currentExp &&
-            row.Responsibility &&
-            row.Responsibility.trim()
-          ) {
-            // Additional responsibility for current experience
-            currentExp.responsibilities.push(row.Responsibility);
-          }
-        });
-
-        // Push last experience
-        if (currentExp) {
-          experiences.push(currentExp);
-        }
-
-        return experiences;
-      }
-
-      function processAchievementsData(data) {
-        if (!data || data.length < 1) return [];
-
-        const achievements = [];
-        let currentAch = null;
-
-        data.forEach((row) => {
-          if (row["Achievement Title"] && row["Achievement Title"].trim()) {
-            // New achievement entry
-            if (currentAch) {
-              achievements.push(currentAch);
-            }
-            currentAch = {
-              title: row["Achievement Title"],
-              points: row["Achievement Point"]
-                ? [row["Achievement Point"]]
-                : [],
-            };
-          } else if (
-            currentAch &&
-            row["Achievement Point"] &&
-            row["Achievement Point"].trim()
-          ) {
-            // Additional point for current achievement
-            currentAch.points.push(row["Achievement Point"]);
-          }
-        });
-
-        // Push last achievement
-        if (currentAch) {
-          achievements.push(currentAch);
-        }
-
-        return achievements;
-      }
-
-      async function loadResumeData() {
-        // For now, using sample data. Uncomment below to use Google Sheets
-        const profileData = await fetchSheetData(SHEET_CONFIG.profile);
-        const skillsData = await fetchSheetData(SHEET_CONFIG.skills);
-        const experienceData = await fetchSheetData(SHEET_CONFIG.experience);
-        const achievementsData = await fetchSheetData(
-          SHEET_CONFIG.achievements
-        );
-
-        // Process and render the data
-        const resumeData = {
-          profile: processProfileData(profileData),
-          skills: skillsData,
-          experience: processExperienceData(experienceData),
-          achievements: processAchievementsData(achievementsData),
+    function downloadPDF() {
+        const s = document.createElement('script');
+        s.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+        s.onload = () => {
+            html2pdf().set({
+                margin: 0.5,
+                filename: 'Abhinav_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+            }).from(document.getElementById('resume')).save();
         };
-        renderResume(resumeData);
+        document.head.appendChild(s);
+    }
 
-        // Using sample data for now
-        // renderResume(SAMPLE_DATA);
-      }
-
-      function downloadPDF() {
-        const element = document.getElementById("resume");
-        const opt = {
-          margin: 0.5,
-          filename: "Abhinav_Resume.pdf",
-          image: { type: "jpeg", quality: 0.98 },
-          html2canvas: { scale: 2, letterRendering: true },
-          jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
-        };
-
-        html2pdf().set(opt).from(element).save();
-      }
-
-      // Load resume data on page load
-      window.addEventListener("DOMContentLoaded", loadResumeData);
+    // Load data from external JSON file
+    fetch(DATA_FILE)
+        .then(r => {
+            if (!r.ok) throw new Error('File not found');
+            return r.json();
+        })
+        .then(render)
+        .catch(e => showError(e.message));
     </script>
-  </body>
+</body>
 </html>

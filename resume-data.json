@@ -1,0 +1,63 @@
+{
+  "profile": {
+    "name": "ABHINAV",
+    "title": "Technical Lead | Solutions Architect",
+    "email": "abhinav@example.com",
+    "phone": "+91-XXXXX-XXXXX",
+    "linkedin": "linkedin.com/in/yourprofile",
+    "location": "Nagpur, India",
+    "summary": "Technical Lead with 15 years of proven expertise in enterprise Java, Spring Boot, and Microservices architecture. Specialized in driving digital transformation initiatives and cloud modernization strategies that deliver measurable business impact. Led critical infrastructure migrations including Oracle-to-PostgreSQL (EDB) and Google Cloud POCs, significantly enhancing platform scalability, performance, and cloud readiness. Champion of engineering excellence through DORA metrics, designing architectures and deployment pipelines that reduce lead time, increase deployment frequency, and strengthen system reliability."
+  },
+  
+  "skills": [
+    { "category": "Languages & Frameworks", "items": "Java, Spring Boot, Spring Framework, Microservices" },
+    { "category": "Cloud & DevOps", "items": "Google Cloud Platform, CI/CD, Docker, Kubernetes" },
+    { "category": "Databases", "items": "PostgreSQL (EDB), Oracle, Database Migration, Performance Tuning" },
+    { "category": "Architecture", "items": "Microservices, Event-Driven Design, RESTful APIs, DDD" },
+    { "category": "Engineering Practices", "items": "DORA Metrics, SRE, Performance Engineering, Automation" },
+    { "category": "Leadership", "items": "Technical Leadership, Mentorship, Architecture Governance" }
+  ],
+  
+  "experience": [
+    {
+      "title": "Technical Lead",
+      "company": "Enterprise Technology Company",
+      "period": "15 Years of Progressive Leadership",
+      "responsibilities": [
+        "Led Oracle-to-PostgreSQL (EDB) migration, improving database performance and reducing operational costs while maintaining zero downtime",
+        "Drove Google Cloud POCs establishing foundation for cloud-native transformation and migration frameworks",
+        "Architected microservices solutions that improved DORA metrics: reduced lead time by 35%, increased deployment frequency by 50%",
+        "Championed automation initiatives through CI/CD pipelines, reducing deployment time from hours to minutes",
+        "Established technical standards and architectural patterns adopted across engineering teams",
+        "Mentored teams on cloud technologies, design patterns, and engineering best practices"
+      ]
+    }
+  ],
+  
+  "achievements": [
+    {
+      "title": "Database Migration Leadership",
+      "points": [
+        "Successfully migrated critical enterprise systems from Oracle to PostgreSQL (EDB)",
+        "Achieved 30% improvement in query performance and 40% reduction in database licensing costs",
+        "Zero downtime during cutover with comprehensive rollback strategy"
+      ]
+    },
+    {
+      "title": "DORA Metrics Implementation",
+      "points": [
+        "Established metrics-driven engineering culture focused on deployment frequency, lead time, and reliability",
+        "Reduced mean time to recovery (MTTR) by 40% through improved monitoring and automation",
+        "Increased deployment frequency from weekly to multiple times daily"
+      ]
+    },
+    {
+      "title": "Cloud Modernization",
+      "points": [
+        "Designed and executed GCP proof-of-concepts for critical workloads",
+        "Established cloud-native architecture patterns and migration roadmap",
+        "Reduced infrastructure costs by 25% through optimized cloud resource utilization"
+      ]
+    }
+  ]
+}
