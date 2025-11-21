@@ -1,278 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abhinav - Technical Lead Resume</title>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box}
-        
-        body{
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height:1.6;
-            color:#333;
-            background:#f5f5f5;
-            padding:20px;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f5f5f5;
+        padding: 20px;
+      }
+
+      .controls {
+        max-width: 850px;
+        margin: 0 auto 20px;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        background: #2563eb;
+        color: #fff;
+        border: none;
+        padding: 12px 24px;
+        font-size: 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .btn:hover {
+        background: #1d4ed8;
+      }
+      .btn-secondary {
+        background: #64748b;
+      }
+      .btn-secondary:hover {
+        background: #475569;
+      }
+
+      .container {
+        max-width: 850px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 50px 60px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        border-bottom: 3px solid #2563eb;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+
+      .header h1 {
+        font-size: 2.4em;
+        color: #1e293b;
+        margin-bottom: 8px;
+        letter-spacing: -0.5px;
+      }
+
+      .header .title {
+        font-size: 1.25em;
+        color: #2563eb;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        font-size: 0.9em;
+        color: #64748b;
+      }
+
+      .contact-info a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+      .contact-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .section {
+        margin-bottom: 28px;
+      }
+
+      .section h2 {
+        font-size: 1.2em;
+        color: #1e293b;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 6px;
+      }
+
+      .summary {
+        font-size: 0.95em;
+        line-height: 1.7;
+        color: #475569;
+        text-align: justify;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px 30px;
+      }
+
+      .skill-item {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 8px;
+        font-size: 0.9em;
+        line-height: 1.5;
+        align-items: baseline;
+      }
+
+      .skill-item strong {
+        color: #1e293b;
+        font-weight: 600;
+      }
+
+      .skill-item span {
+        color: #475569;
+      }
+
+      .experience-item,
+      .achievement-item {
+        margin-bottom: 20px;
+      }
+
+      .experience-item h3,
+      .achievement-item h3 {
+        font-size: 1.05em;
+        color: #1e293b;
+        margin-bottom: 4px;
+      }
+
+      .experience-item .meta {
+        color: #64748b;
+        font-size: 0.85em;
+        margin-bottom: 8px;
+        font-style: italic;
+      }
+
+      .experience-item ul,
+      .achievement-item ul {
+        margin-left: 18px;
+        margin-top: 6px;
+      }
+
+      .experience-item li,
+      .achievement-item li {
+        margin-bottom: 5px;
+        color: #475569;
+        font-size: 0.9em;
+        line-height: 1.55;
+      }
+
+      .error {
+        padding: 40px;
+        text-align: center;
+        color: #666;
+      }
+      .error h3 {
+        color: #dc2626;
+        margin-bottom: 15px;
+      }
+      .error code {
+        background: #f1f5f9;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+
+      /* Print Styles - This is the key for high-quality PDF */
+      @media print {
+        @page {
+          size: A4;
+          margin: 15mm 15mm 15mm 15mm;
         }
-        
-        .controls{
-            max-width:850px;
-            margin:0 auto 20px;
-            display:flex;
-            gap:10px;
-            justify-content:flex-end;
-            flex-wrap:wrap;
+
+        body {
+          background: #fff;
+          padding: 0;
+          font-size: 11pt;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
         }
-        
-        .btn{
-            background:#2563eb;
-            color:#fff;
-            border:none;
-            padding:12px 24px;
-            font-size:14px;
-            border-radius:6px;
-            cursor:pointer;
-            font-weight:600;
-            display:inline-flex;
-            align-items:center;
-            gap:8px;
+
+        .controls {
+          display: none !important;
         }
-        
-        .btn:hover{background:#1d4ed8}
-        .btn-secondary{background:#64748b}
-        .btn-secondary:hover{background:#475569}
-        
-        .container{
-            max-width:850px;
-            margin:0 auto;
-            background:#fff;
-            padding:50px 60px;
-            box-shadow:0 2px 10px rgba(0,0,0,.1);
+
+        .container {
+          box-shadow: none;
+          padding: 0;
+          max-width: 100%;
+          margin: 0;
         }
-        
-        .header{
-            border-bottom:3px solid #2563eb;
-            padding-bottom:20px;
-            margin-bottom:30px;
+
+        .header {
+          border-bottom-color: #2563eb !important;
+          padding-bottom: 15px;
+          margin-bottom: 20px;
         }
-        
-        .header h1{
-            font-size:2.4em;
-            color:#1e293b;
-            margin-bottom:8px;
-            letter-spacing:-0.5px;
+
+        .header h1 {
+          font-size: 22pt;
         }
-        
-        .header .title{
-            font-size:1.25em;
-            color:#2563eb;
-            margin-bottom:15px;
-            font-weight:600;
+
+        .header .title {
+          font-size: 12pt;
+          color: #2563eb !important;
         }
-        
-        .contact-info{
-            display:flex;
-            flex-wrap:wrap;
-            gap:8px 20px;
-            font-size:.9em;
-            color:#64748b;
+
+        .section {
+          margin-bottom: 18px;
+          page-break-inside: avoid;
         }
-        
-        .contact-info a{color:#2563eb;text-decoration:none}
-        .contact-info a:hover{text-decoration:underline}
-        .contact-item{display:inline-flex;align-items:center;gap:6px}
-        
-        .section{margin-bottom:28px}
-        
-        .section h2{
-            font-size:1.2em;
-            color:#1e293b;
-            margin-bottom:12px;
-            text-transform:uppercase;
-            letter-spacing:1px;
-            border-bottom:2px solid #e2e8f0;
-            padding-bottom:6px;
+
+        .section h2 {
+          font-size: 11pt;
+          color: #1e293b !important;
+          border-bottom-color: #e2e8f0 !important;
         }
-        
-        .summary{
-            font-size:.95em;
-            line-height:1.7;
-            color:#475569;
-            text-align:justify;
+
+        .experience-item,
+        .achievement-item {
+          page-break-inside: avoid;
         }
-        
-        .skills-grid{
-            display:grid;
-            grid-template-columns:repeat(2,1fr);
-            gap:10px;
+
+        a {
+          color: #2563eb !important;
+          text-decoration: none;
         }
-        
-        .skill-item{
-            display:flex;
-            font-size:.9em;
-            line-height:1.5;
+
+        /* Ensure colors print */
+        .header .title,
+        .contact-info a,
+        a {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
         }
-        
-        .skill-item strong{
-            min-width:160px;
-            color:#1e293b;
-            flex-shrink:0;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 30px 25px;
         }
-        
-        .skill-item span{color:#475569}
-        
-        .experience-item,.achievement-item{margin-bottom:20px}
-        
-        .experience-item h3,.achievement-item h3{
-            font-size:1.05em;
-            color:#1e293b;
-            margin-bottom:4px;
+        .header h1 {
+          font-size: 1.8em;
         }
-        
-        .experience-item .meta{
-            color:#64748b;
-            font-size:.85em;
-            margin-bottom:8px;
-            font-style:italic;
+        .skills-grid {
+          grid-template-columns: 1fr;
         }
-        
-        .experience-item ul,.achievement-item ul{
-            margin-left:18px;
-            margin-top:6px;
+        .controls {
+          justify-content: center;
         }
-        
-        .experience-item li,.achievement-item li{
-            margin-bottom:5px;
-            color:#475569;
-            font-size:.9em;
-            line-height:1.55;
-        }
-        
-        .error{padding:40px;text-align:center;color:#666}
-        .error h3{color:#dc2626;margin-bottom:15px}
-        .error code{background:#f1f5f9;padding:2px 8px;border-radius:4px;font-size:.9em}
-        
-        /* Print Styles - This is the key for high-quality PDF */
-        @media print {
-            @page {
-                size: A4;
-                margin: 15mm 15mm 15mm 15mm;
-            }
-            
-            body {
-                background: #fff;
-                padding: 0;
-                font-size: 11pt;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-            
-            .controls {
-                display: none !important;
-            }
-            
-            .container {
-                box-shadow: none;
-                padding: 0;
-                max-width: 100%;
-                margin: 0;
-            }
-            
-            .header {
-                border-bottom-color: #2563eb !important;
-                padding-bottom: 15px;
-                margin-bottom: 20px;
-            }
-            
-            .header h1 {
-                font-size: 22pt;
-            }
-            
-            .header .title {
-                font-size: 12pt;
-                color: #2563eb !important;
-            }
-            
-            .section {
-                margin-bottom: 18px;
-                page-break-inside: avoid;
-            }
-            
-            .section h2 {
-                font-size: 11pt;
-                color: #1e293b !important;
-                border-bottom-color: #e2e8f0 !important;
-            }
-            
-            .experience-item, .achievement-item {
-                page-break-inside: avoid;
-            }
-            
-            a {
-                color: #2563eb !important;
-                text-decoration: none;
-            }
-            
-            /* Ensure colors print */
-            .header .title,
-            .contact-info a,
-            a {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-        }
-        
-        @media (max-width:768px) {
-            .container{padding:30px 25px}
-            .header h1{font-size:1.8em}
-            .skills-grid{grid-template-columns:1fr}
-            .controls{justify-content:center}
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="controls">
-        <button class="btn" onclick="printPDF()">📥 Download PDF (High Quality)</button>
-        <button class="btn btn-secondary" onclick="showInstructions()">❓ Help</button>
+      <button class="btn" onclick="printPDF()">
+        📥 Download PDF (High Quality)
+      </button>
+      <button class="btn btn-secondary" onclick="showInstructions()">
+        ❓ Help
+      </button>
     </div>
-    
+
     <div class="container" id="resume">
-        <div style="padding:40px;text-align:center;color:#666">Loading...</div>
+      <div style="padding: 40px; text-align: center; color: #666">
+        Loading...
+      </div>
     </div>
 
     <!-- Instructions Modal -->
-    <div id="modal" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:1000;padding:20px;overflow:auto">
-        <div style="max-width:500px;margin:50px auto;background:#fff;border-radius:8px;padding:30px;position:relative">
-            <button onclick="hideInstructions()" style="position:absolute;top:15px;right:15px;border:none;background:none;font-size:24px;cursor:pointer;color:#666">×</button>
-            <h3 style="margin-bottom:15px;color:#1e293b">📥 How to Download High-Quality PDF</h3>
-            <ol style="margin-left:20px;color:#475569;line-height:1.8">
-                <li>Click <strong>"Download PDF"</strong> button</li>
-                <li>Print dialog will open</li>
-                <li>Select <strong>"Save as PDF"</strong> as destination</li>
-                <li>Click <strong>Save</strong></li>
-            </ol>
-            <p style="margin-top:20px;padding:15px;background:#f0f9ff;border-radius:6px;font-size:.9em;color:#1e40af">
-                <strong>💡 Why this method?</strong><br>
-                Browser's native print-to-PDF preserves real text (not images), so text is selectable, searchable, and crisp at any zoom level.
-            </p>
-            <p style="margin-top:15px;font-size:.85em;color:#64748b">
-                <strong>Keyboard shortcut:</strong> Ctrl+P (Windows) or Cmd+P (Mac)
-            </p>
-        </div>
+    <div
+      id="modal"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        padding: 20px;
+        overflow: auto;
+      "
+    >
+      <div
+        style="
+          max-width: 500px;
+          margin: 50px auto;
+          background: #fff;
+          border-radius: 8px;
+          padding: 30px;
+          position: relative;
+        "
+      >
+        <button
+          onclick="hideInstructions()"
+          style="
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            border: none;
+            background: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+          "
+        >
+          ×
+        </button>
+        <h3 style="margin-bottom: 15px; color: #1e293b">
+          📥 How to Download High-Quality PDF
+        </h3>
+        <ol style="margin-left: 20px; color: #475569; line-height: 1.8">
+          <li>Click <strong>"Download PDF"</strong> button</li>
+          <li>Print dialog will open</li>
+          <li>Select <strong>"Save as PDF"</strong> as destination</li>
+          <li>Click <strong>Save</strong></li>
+        </ol>
+        <p
+          style="
+            margin-top: 20px;
+            padding: 15px;
+            background: #f0f9ff;
+            border-radius: 6px;
+            font-size: 0.9em;
+            color: #1e40af;
+          "
+        >
+          <strong>💡 Why this method?</strong><br />
+          Browser's native print-to-PDF preserves real text (not images), so
+          text is selectable, searchable, and crisp at any zoom level.
+        </p>
+        <p style="margin-top: 15px; font-size: 0.85em; color: #64748b">
+          <strong>Keyboard shortcut:</strong> Ctrl+P (Windows) or Cmd+P (Mac)
+        </p>
+      </div>
     </div>
 
     <script>
-    const DATA_FILE = 'resume-data.json';
+      const DATA_FILE = "resume-data.json";
 
-    function render(d) {
-        document.getElementById('resume').innerHTML = `
+      function render(d) {
+        document.getElementById("resume").innerHTML = `
             <div class="header">
                 <h1>${d.profile.name}</h1>
                 <div class="title">${d.profile.title}</div>
                 <div class="contact-info">
-                    <span class="contact-item">📧 <a href="mailto:${d.profile.email}">${d.profile.email}</a></span>
+                    <span class="contact-item">📧 <a href="mailto:${
+                      d.profile.email
+                    }">${d.profile.email}</a></span>
                     <span class="contact-item">📱 ${d.profile.phone}</span>
-                    <span class="contact-item">💼 <a href="https://${d.profile.linkedin}" target="_blank">LinkedIn</a></span>
+                    <span class="contact-item">💼 <a href="https://${
+                      d.profile.linkedin
+                    }" target="_blank">LinkedIn</a></span>
                     <span class="contact-item">📍 ${d.profile.location}</span>
                 </div>
             </div>
@@ -283,32 +394,49 @@
             <div class="section">
                 <h2>Core Competencies</h2>
                 <div class="skills-grid">
-                    ${d.skills.map(s => `<div class="skill-item"><strong>${s.category}:</strong><span>${s.items}</span></div>`).join('')}
+                    ${d.skills
+                      .map(
+                        (s) =>
+                          `<div class="skill-item"><strong>${s.category}:</strong><span>${s.items}</span></div>`
+                      )
+                      .join("")}
                 </div>
             </div>
             <div class="section">
                 <h2>Professional Experience</h2>
-                ${d.experience.map(e => `
+                ${d.experience
+                  .map(
+                    (e) => `
                     <div class="experience-item">
                         <h3>${e.title}</h3>
                         <div class="meta">${e.company} | ${e.period}</div>
-                        <ul>${e.responsibilities.map(r => `<li>${r}</li>`).join('')}</ul>
+                        <ul>${e.responsibilities
+                          .map((r) => `<li>${r}</li>`)
+                          .join("")}</ul>
                     </div>
-                `).join('')}
+                `
+                  )
+                  .join("")}
             </div>
             <div class="section">
                 <h2>Key Achievements</h2>
-                ${d.achievements.map(a => `
+                ${d.achievements
+                  .map(
+                    (a) => `
                     <div class="achievement-item">
                         <h3>${a.title}</h3>
-                        <ul>${a.points.map(p => `<li>${p}</li>`).join('')}</ul>
+                        <ul>${a.points
+                          .map((p) => `<li>${p}</li>`)
+                          .join("")}</ul>
                     </div>
-                `).join('')}
+                `
+                  )
+                  .join("")}
             </div>`;
-    }
+      }
 
-    function showError(msg) {
-        document.getElementById('resume').innerHTML = `
+      function showError(msg) {
+        document.getElementById("resume").innerHTML = `
             <div class="error">
                 <h3>⚠️ Could not load resume data</h3>
                 <p>${msg}</p>
@@ -317,33 +445,33 @@
                 <p>1. <code>${DATA_FILE}</code> is in the same folder</p>
                 <p>2. Files are served from a web server</p>
             </div>`;
-    }
+      }
 
-    function printPDF() {
+      function printPDF() {
         window.print();
-    }
+      }
 
-    function showInstructions() {
-        document.getElementById('modal').style.display = 'block';
-    }
+      function showInstructions() {
+        document.getElementById("modal").style.display = "block";
+      }
 
-    function hideInstructions() {
-        document.getElementById('modal').style.display = 'none';
-    }
+      function hideInstructions() {
+        document.getElementById("modal").style.display = "none";
+      }
 
-    // Close modal on outside click
-    document.getElementById('modal').addEventListener('click', function(e) {
+      // Close modal on outside click
+      document.getElementById("modal").addEventListener("click", function (e) {
         if (e.target === this) hideInstructions();
-    });
+      });
 
-    // Load data
-    fetch(DATA_FILE)
-        .then(r => {
-            if (!r.ok) throw new Error('File not found');
-            return r.json();
+      // Load data
+      fetch(DATA_FILE)
+        .then((r) => {
+          if (!r.ok) throw new Error("File not found");
+          return r.json();
         })
         .then(render)
-        .catch(e => showError(e.message));
+        .catch((e) => showError(e.message));
     </script>
-</body>
+  </body>
 </html>

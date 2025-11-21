@@ -722,7 +722,7 @@ PREVIEW_TEMPLATE = '''
             <h2>Core Competencies</h2>
             <div class="skills-grid">
                 {% for skill in d.skills %}
-                <div class="skill-item"><strong>{{ skill.category }}:</strong><span>{{ skill.items }}</span></div>
+                <div class="skill-item"><strong>{{ skill['category'] }}:</strong><span>{{ skill['items'] }}</span></div>
                 {% endfor %}
             </div>
         </div>
@@ -730,10 +730,10 @@ PREVIEW_TEMPLATE = '''
             <h2>Professional Experience</h2>
             {% for exp in d.experience %}
             <div class="experience-item">
-                <h3>{{ exp.title }}</h3>
-                <div class="meta">{{ exp.company }} | {{ exp.period }}</div>
+                <h3>{{ exp['title'] }}</h3>
+                <div class="meta">{{ exp['company'] }} | {{ exp['period'] }}</div>
                 <ul>
-                    {% for resp in exp.responsibilities %}
+                    {% for resp in exp['responsibilities'] %}
                     <li>{{ resp }}</li>
                     {% endfor %}
                 </ul>
@@ -744,9 +744,9 @@ PREVIEW_TEMPLATE = '''
             <h2>Key Achievements</h2>
             {% for ach in d.achievements %}
             <div class="achievement-item">
-                <h3>{{ ach.title }}</h3>
+                <h3>{{ ach['title'] }}</h3>
                 <ul>
-                    {% for point in ach.points %}
+                    {% for point in ach['points'] %}
                     <li>{{ point }}</li>
                     {% endfor %}
                 </ul>
@@ -798,4 +798,5 @@ if __name__ == '__main__':
     print("\n💡 Press Ctrl+C to stop the server")
     print("="*60 + "\n")
     
-    app.run(debug=False, port=5000)
+    app.run(debug=True, port=5000)
+    
