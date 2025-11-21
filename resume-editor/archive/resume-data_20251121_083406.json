@@ -52,12 +52,12 @@
     }
   ],
   "profile": {
-    "name": "ABHINAV SHARMA",
+    "name": "ABHINAV",
     "title": "Technical Lead | Solutions Architect",
-    "email": "abhinav.2310@gmail.com",
-    "phone": "+91-7755926995",
-    "linkedin": "linkedin.com/in/onlyabhinav",
-    "location": "Pune, India",
+    "email": "abhinav@example.com",
+    "phone": "+91-XXXXX-XXXXX",
+    "linkedin": "linkedin.com/in/yourprofile",
+    "location": "Nagpur, India",
     "summary": "Technical Lead with 15 years of proven expertise in enterprise Java, Spring Boot, and Microservices architecture. Specialized in driving digital transformation initiatives and cloud modernization strategies that deliver measurable business impact. Led critical infrastructure migrations including Oracle-to-PostgreSQL (EDB) and Google Cloud POCs, significantly enhancing platform scalability, performance, and cloud readiness. Champion of engineering excellence through DORA metrics, designing architectures and deployment pipelines that reduce lead time, increase deployment frequency, and strengthen system reliability."
   },
   "skills": [
